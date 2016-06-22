@@ -36,18 +36,32 @@ public class ParkingOperation {
 		if(operationKey.equals("registration_numbers_for_cars_with_colour"))
 		{
 			List<CarDetails> carDetailList =  getCarDetailsForColour(operation.split(" ")[1]);
+			Boolean printComma = Boolean.FALSE;
 			for(CarDetails carDel : carDetailList)
 			{
-				System.out.println(carDel.getVehicleRegNo()+" ,");
+				if(printComma)
+				{
+					System.out.print(", ");
+				}
+				System.out.print(carDel.getVehicleRegNo());
+				printComma = Boolean.TRUE;
 			}
+			System.out.println();
 		}
 		if(operationKey.equals("slot_numbers_for_cars_with_colour"))
 		{
 			List<CarDetails> carDetailList =  getCarDetailsForColour(operation.split(" ")[1]);
+			Boolean printComma = Boolean.FALSE;
 			for(CarDetails carDel : carDetailList)
 			{
-				System.out.println(carDel.getSlotNo()+" ,");
+				if(printComma)
+				{
+					System.out.print(", ");
+				}
+				System.out.print(carDel.getSlotNo());
+				printComma = Boolean.TRUE;
 			}
+			System.out.println();
 		}
 		if(operationKey.equals("slot_number_for_registration_number"))
 		{
