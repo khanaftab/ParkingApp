@@ -3,6 +3,12 @@ package com.gojek.parking;
 import java.io.BufferedReader;
 import java.io.FileReader;
 
+/**
+ * 
+ * The FileInput constructor take file path as an argument and read the commands to performance parking operation.    
+ * 
+ */
+
 public class FileInput {
 	private ParkingOperation operations = new ParkingOperation();
 	public FileInput(String filePath)

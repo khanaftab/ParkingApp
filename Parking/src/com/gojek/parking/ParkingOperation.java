@@ -5,6 +5,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 
+ * The ParkingOperation class is the heart of parking Application. Take the Command and perform operation.
+ * Search Using Car Colour.
+ * Search Using vehicle registration Number.
+ * Search Using parking slot.      
+ * 
+ */
 public class ParkingOperation {
 	private Map<String, CarDetails> carRegDetails = new HashMap<String, CarDetails>();
 	private ParkingSlot parkingSlot = null;

@@ -1,6 +1,10 @@
 package com.gojek.parking;
 
- public class CarDetails {
+/**
+ * Class CarDetails contains  information about car's in parking slots.    
+ */
+
+  public class CarDetails {
 	private String colour;
 	private String vehicleRegNo;
 	private Integer slotNo;
@@ -11,7 +15,6 @@ package com.gojek.parking;
 		this.colour = carDetail.split(" ")[2];
 		this.slotNo = slotNo;
 	}
-	
 	
 	public void setVehicleRegNo(String vehicleRegNo)
 	{
