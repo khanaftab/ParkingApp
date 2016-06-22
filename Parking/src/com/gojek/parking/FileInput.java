@@ -5,7 +5,7 @@ import java.io.FileReader;
 
 /**
  * 
- * The FileInput constructor take file path as an argument and read the commands to performance parking operation.    
+ * The FileInput constructor takes file path as an argument and read the commands to performance parking operation.    
  * 
  */
 
