@@ -1,7 +1,8 @@
 package com.gojek.parking;
 
 /**
- * Class CarDetails contains  information about car's in parking slots.    
+ * Class CarDetails contains  information about car's with parking slot.
+ *     
  */
 
   public class CarDetails {
